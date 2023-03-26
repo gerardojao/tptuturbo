@@ -1,139 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="./assets/logo.svg">
     <title>Todo Para Tu Turbo</title>
+    <link rel="stylesheet" href="styles-min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-    <nav class="main-nav">
-        <div id="toggle-menu" class="toggle-menu">
-            <i class="fa-solid fa-bars"></i>
-            <img src="/logos/isotipo blanco-01.png" class="logo-menu" alt="">
-        </div>
-        <ul class="main-menu" id="main-menu">
-            <li class="main-menu__item">
-                <a href="#home" class="main-menu__link" id="main-menu__link">Home</a>
-            </li>
-            <li class="main-menu__item">
-                <a href="#nosotros" class="main-menu__link" id="main-menu__link">Nosotros</a>
-            </li>
-            <li class="main-menu__item">
-                <a href="#servicios" class="main-menu__link" id="main-menu__link">Servicios</a>
-            </li>
-            <li class="main-menu__item">
-                <a href="#clientes" class="main-menu__link" id="main-menu__link">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-
-    <section class="vh firstvh">
-
-        <article class="title">
-            <img src="./logos/logo horizontal.png" class="title__logo" alt="">
-            <span class="firstvh__button">Contact Us</span>
-        </article>
-    </section>
-    
-    <section class="secondvh vh">
-        <h2 class="ventajas__title">
-            Quienes Somos?
-        </h2>
-        <article>
-            <div class="ventaja1">
-                <span class="numero">1</span>
-                <h2>
-                    Misión
-                </h2>
-                <p>
-                    Atender y Abastecer las necesidades del mercado Automotor Diésel venezolano con nuestros productos y servicios, ofreciendo calidad, asesoría técnica especializada y Precios competitivos,garantizando la disponibilidad inmediata de satisfaciendo así a nuestros consumidores del Sector Agrícola, Industrial, vehicular Liviano y Pesado con la mejor atención.
-                </p>
-            </div>
-            <div class="ventaja2">
-                <span class="numero">2</span>
-                <h2>
-                    Visión
-                </h2>
-                <p>
-                    Construir una entidad de trabajo con valores, teniendo el mejor talento humano y excelente servicio de atención al cliente el cual que nos permita ser la empresa líder en la Importación, Distribución y comercialización de Turbocargadores y sus partes en Venezuela, apoyándonos en la innovación y la tecnología para el desarrollo del sector automotor diésel en nuestro país Venezuela.
-                </p>
-            </div>
-            <div class="ventaja3">
-                <span class="numero">3</span>
-                <h2>
-                    Valores
-                </h2>
-                <p>
-                    La Calidad, Asistencia Técnica, Responsabilidad, Puntualidad, Innovación y Empatía son algunos de los valores que nos definen como empresa <br>
-                </p>
-            </div>
-        </article>
-    </section>
-    
-    <section class="fivevh vh" id="fivevh">
-        <h2 class="catalogue__title">
-            Catalogo
-        </h2>
-        <!-- <div class="limite5"> -->
-          <article class="catalogue">
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-            <figure>
-              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
-            </figure>
-          </article>
-        <!-- </div> -->
-    </section>
-    
-    <section class="quintacapa capa" id="contact">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo"> <img src="/logos/isotipo blanco-01.png" class="logo-menu" alt="logo" /></div>
+            <ul class="menu m">
+                <li class="navbar__link"><a class="navbar__link--a a" href="#home">Inicio</a></li>
+          
+                <li class="navbar__link"><a class="navbar__link--a a" href="#service">Quienes somos?</a></li>
             
-        <form action="" class="form">
-            <div class="title__container">
-                <h2 class="form__title">Contact me</h2>
+                <li class="navbar__link"><a class="navbar__link--a a" href="#portfolio">Catálogo de productos</a></li>
+                <li class="navbar__link"><a class="navbar__link--a a" href="#contact">Contáctanos</a></li>
+            </ul> <button id="panel-btn" class="panel-btn hamburger hamburger--vortex" type="button"> <span
+                    class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div class="home__container">
+            <div class="title">
+                <img src="./logos/logo horizontal.png" class="title__logo" alt="">
+                <a href="#contact" class="firstvh__button">Contáctanos</a>
             </div>
-            <div class="formgroup__container">
-                <div class="form__group">
-                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Name</label>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Email</label>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="email" class="form__input textarea" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Comment</label>
-                </div>
-            </div>
-            <input type="submit" value="Send" class="submit">
-        </form>
-    
+        </div>
     </section>
 
+    <!-- Share button -->
+
+    <div class="share-button">
+        <span>
+
+            <i class="fas fa-share-alt"></i>
+        </span>
+
+        <a href="https://twitter.com/intent/tweet?text=Balloons Momentos&url=https://ballonsmomentos.vercel.app/&via=gerardojao"
+            target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/sharer.php?u=https://ballonsmomentos.vercel.app/&t=Ballons Momentos"
+            target="_blank"><i class="fab fa-facebook"></i></a>
+
+        <a title="Whatsapp"
+            href="https://api.whatsapp.com/send?text=Visita%20mi%20BallonsMomentos%20Déjanos%20Sorprenderte%20https://ballonsmomentos.vercel.app/"
+            target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+
+
+
+    <section class="service" id="service">
+        <div class="service__container">
+            <h2 class="service__title">Quienes Somos?</h2>
+            <div class="service__content">
+                <div class="service__content--card">
+                    <div class="box"><i class="fa fa-bullseye" aria-hidden="true"></i></div>
+                    <div class="text">Misión</div>
+                    <p> Atender y Abastecer las necesidades del mercado Automotor Diésel venezolano con nuestros
+                        productos y servicios, ofreciendo calidad, asesoría técnica especializada y Precios
+                        competitivos,garantizando la disponibilidad inmediata de satisfaciendo así a nuestros
+                        consumidores del Sector Agrícola, Industrial, vehicular Liviano y Pesado con la mejor atención.
+                    </p>
+                </div>
+                <div class="service__content--card">
+                    <div class="box"><i class="fa fa-eye" aria-hidden="true"></i><br>
+                        <div class="text">Visión</div>
+                        <p>Construir una entidad de trabajo con valores, teniendo el mejor talento humano y excelente
+                            servicio de atención al cliente el cual que nos permita ser la empresa líder en la
+                            Importación, Distribución y comercialización de Turbocargadores y sus partes en Venezuela,
+                            apoyándonos en la innovación y la tecnología para el desarrollo del sector automotor diésel
+                            en nuestro país Venezuela.</p>
+
+                    </div>
+                </div>
+                <div class="service__content--card">
+                    <div class="box"><i class="fa fa-users" aria-hidden="true"></i><br>
+                        <div class="text">Valores</div>
+                        <p>La Calidad, Asistencia Técnica, Responsabilidad, Puntualidad, Innovación y Empatía son
+                            algunos de los valores que nos definen como empresa.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__container">
+            <h2 class="portfolio__title">Catálogo de Productos</h2>
+            <div class="portfolio__container--carousel ">
+
+                <div class="card ">
+                    <div class="box"><a href="" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/DSCF2038.jpg" alt="turbo1"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="box"><a href="https://singer-biography.netlify.app/" target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/DSCF2788.jpg" alt="Singer Searcher"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="box"><a href="https://bit.ly/3rsDqEd" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/DSCF2800.jpg" alt="Apple Bite"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="box"><a href="https://bit.ly/3MsRdD9" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/DSCF2038.jpg" alt="Biolink Gerardojao"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="box"><a href="https://singer-biography.netlify.app/" target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/DSCF2788.jpg" alt="Singer Searcher"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="box"><a href="https://bit.ly/3rsDqEd" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/DSCF2800.jpg" alt="Apple Bite"></a>
+                        <div class="text">
+                            <h4>Nombre del Producto</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, veritatis? </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <div class="center">
+                <div class="content content__hide">
+                    <div class="header">
+                        <h2>Message sent successfully</h2>
+                    </div><label for="click" class="fas fa-check"></label>
+                    <p><span class="pattern bigFont">Gerardo</span> Thank you for contacting me, I will contact you as
+                        soon as possible.</p>
+                    <div class="line"></div><a class="close-btn">Close</a>
+                </div>
+            </div>
+            <h2 class="contact__title">Contact me</h2>
+            <div class="form__content">
+                <div class="form__content--1">
+                    <div class="text">Get in Touch</div>
+                    <p> I am located in a beautiful country called Venezuela, and my city is known as the musical
+                        capital of the country, for me the best city in the world, Barquisimeto. </p>
+                    <div class="icons">
+                        <div class="row"><i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Todo para tu Turbo C.A</div>
+                                <!-- <div class="sub-title"></div> -->
+                            </div>
+                        </div>
+                        <div class="row"><i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Ubicación</div>
+                                <div class="sub-title">Barquisimeto, Venezuela</div>
+                            </div>
+                        </div>
+                        <div class="row"><i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Correo electrónico</div>
+                                <div class="sub-title">todoparatuturbo@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row"><a
+                                href="https://api.whatsapp.com/send?phone=584145303886&text=I%20will%20get%20in%20touch%20as%20soon%20as%20possible,%20thank%20you"
+                                target="_blank"><i class="fab fa-whatsapp-square"></i></i></a>
+                            <div class="info">
+                                <div class="head">Whatsapp</div>
+                                <div class="sub-title">+584145303886</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="main main__form">
+                    <div class="text">Message me</div><input type="text" class="formulario__items" name="name" id="name"
+                        title="Accept space, special character and letters ex: Peter"
+                        pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required><label id="label"
+                        class="form-label" for="name">Nombre:</label><input  id="email" type="text"
+                        class="formulario__items" name="email"
+                        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-z0-9-]+(\.[a-z]{2,15})$"
+                        title="Email format correct: peter@gmail.com" required><label id="label" class="form-label"
+                        for="email">Correo electrónico:</label><textarea id="mensaje" class="formulario__mensaje" cols="30"
+                        rows="5" name="comments" required></textarea><label id="textarea" class="mensaje"
+                        for="mensaje">Mensaje:</label><button class="formulario__items form__button"
+                        value="Send">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="rrss"><a title="LinkedIn" href="https://linkedin.com/in/gerardojao" target="_blank"><i
+                    class="fab fa-linkedin-in" aria-hidden="true"></i></a><a title="GitHub"
+                href="https://github.com/gerardojao" target="_blank"><i class="fab fa-github-alt"
+                    aria-hidden="true"></i></a><a title="Twitter" href="https://twitter.com/gerardojao"
+                target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></i></a></div>
+        <div class="copyright">Created by <span class="name"> Gerardo Arrieta </span>| <span class="far fa-copyright">
+                2023 All rights reserved.</span></div>
+    </footer>
+
+    <!-- Up button -->
+    <button class="scroll-top-btn hidden">
+        <div > <i class="fas fa-chevron-up"></i></div>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
