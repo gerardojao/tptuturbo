@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <title>Todo Para Tu Turbo</title>
+</head>
+<body>
+    
+    <nav class="main-nav">
+        <div id="toggle-menu" class="toggle-menu">
+            <i class="fa-solid fa-bars"></i>
+            <img src="/logos/isotipo blanco-01.png" class="logo-menu" alt="">
+        </div>
+        <ul class="main-menu" id="main-menu">
+            <li class="main-menu__item">
+                <a href="#home" class="main-menu__link" id="main-menu__link">Home</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#nosotros" class="main-menu__link" id="main-menu__link">Nosotros</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#servicios" class="main-menu__link" id="main-menu__link">Servicios</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#clientes" class="main-menu__link" id="main-menu__link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="vh firstvh">
+
+        <article class="title">
+            <img src="./logos/logo horizontal.png" class="title__logo" alt="">
+            <span class="firstvh__button">Contact Us</span>
+        </article>
+    </section>
+    
+    <section class="secondvh vh">
+        <h2 class="ventajas__title">
+            Quienes Somos?
+        </h2>
+        <article>
+            <div class="ventaja1">
+                <span class="numero">1</span>
+                <h2>
+                    Misión
+                </h2>
+                <p>
+                    Atender y Abastecer las necesidades del mercado Automotor Diésel venezolano con nuestros productos y servicios, ofreciendo calidad, asesoría técnica especializada y Precios competitivos,garantizando la disponibilidad inmediata de satisfaciendo así a nuestros consumidores del Sector Agrícola, Industrial, vehicular Liviano y Pesado con la mejor atención.
+                </p>
+            </div>
+            <div class="ventaja2">
+                <span class="numero">2</span>
+                <h2>
+                    Visión
+                </h2>
+                <p>
+                    Construir una entidad de trabajo con valores, teniendo el mejor talento humano y excelente servicio de atención al cliente el cual que nos permita ser la empresa líder en la Importación, Distribución y comercialización de Turbocargadores y sus partes en Venezuela, apoyándonos en la innovación y la tecnología para el desarrollo del sector automotor diésel en nuestro país Venezuela.
+                </p>
+            </div>
+            <div class="ventaja3">
+                <span class="numero">3</span>
+                <h2>
+                    Valores
+                </h2>
+                <p>
+                    La Calidad, Asistencia Técnica, Responsabilidad, Puntualidad, Innovación y Empatía son algunos de los valores que nos definen como empresa <br>
+                </p>
+            </div>
+        </article>
+    </section>
+    
+    <section class="fivevh vh" id="fivevh">
+        <h2 class="catalogue__title">
+            Catalogo
+        </h2>
+        <!-- <div class="limite5"> -->
+          <article class="catalogue">
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+            <figure>
+              <img src="c-joyful-heFTscwGDCA-unsplash.jpg" alt="">
+            </figure>
+          </article>
+        <!-- </div> -->
+    </section>
+    
+    <section class="quintacapa capa" id="contact">
+            
+        <form action="" class="form">
+            <div class="title__container">
+                <h2 class="form__title">Contact me</h2>
+            </div>
+            <div class="formgroup__container">
+                <div class="form__group">
+                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
+                    <label for="email" class="form__label">Name</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
+                    <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="email" class="form__input textarea" autocomplete="off" placeholder=" ">
+                    <label for="email" class="form__label">Comment</label>
+                </div>
+            </div>
+            <input type="submit" value="Send" class="submit">
+        </form>
+    
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
