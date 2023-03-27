@@ -46,12 +46,12 @@ panelBtn.addEventListener("click",()=>{
 w.addEventListener("scroll",()=>{
     if(this.scrollY > 30){
         navBar.classList.add("sticky")
-        spanlogo.classList.replace("navbar__logo--span","navbar__logo--spanW")
+        // spanlogo.classList.replace("navbar__logo--span","navbar__logo--spanW")
         link.forEach(x=>x.classList.replace("navbar__link--a","navbar__link--white"))
        
     }else{
         navBar.classList.remove("sticky")
-        spanlogo.classList.replace("navbar__logo--spanW","navbar__logo--span")
+        // spanlogo.classList.replace("navbar__logo--spanW","navbar__logo--span")
         link.forEach(x=>x.classList.replace("navbar__link--white","navbar__link--a"))
     }
 

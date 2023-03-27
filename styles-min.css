@@ -205,8 +205,8 @@ html {
   background-color: transparent;
   border-radius: 40px;
   display: flex;
- flex-direction:row;
-  border:none;
+  flex-direction:row;
+  
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -218,12 +218,13 @@ html {
   bottom: 1.5vh;
 }
 .share-button:hover{
-  background-color: var(--sixth-color);
+  background-color: var(--var-GRAY);
   transition-delay:.3s linear;
 } 
 
 .share-button a{
-  font-size: 1.3rem;
+  
+  font-size: 1.4rem;
   color:var(--fifth-color);
   text-align: center;
   padding-left: 20px;
@@ -233,7 +234,6 @@ html {
 
 }
 .share-button a i:hover{
-  color:var(--fifth-color);
   transform:scale(1.2)
 } 
 
@@ -241,7 +241,7 @@ html {
   width: 50px;
   height: 50px;
   font-size: 1.5rem;
-  left: 1px;
+  left: 0;
   position: absolute;
   background-color: var(--fifth-color);
   color:var(--sixth-color);
@@ -260,7 +260,7 @@ html {
 }
 
 .share-button:hover a{
-  transform:translateX(40%);
+  transform:translateX(10%);
   opacity:1;
   
 
@@ -283,7 +283,7 @@ html {
 
  /* about section */
 section {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 /* services section */
 .service {
@@ -373,6 +373,7 @@ section {
   padding-right: 10px;
   background: var(--third-color);
   color: var(--second-color);
+padding-bottom: 50px;
 }
 .portfolio__title {
   font-family: "Ubuntu", sans-serif;
@@ -443,19 +444,19 @@ section {
   cursor: pointer;
 }
  /* contact me section */
- /* .contact {
+ .contact {
   font-family: "Poppins", sans-serif;
   padding-left: 10px;
   padding-right: 10px;
-  background: var(--third-color);
-  color: var(--second-color);
-} */
+ padding-top: 50px;
+}
+
 .contact__title {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -482,7 +483,6 @@ section {
 }
 .contact__container {
   position: relative;
-
   max-width: 1300px;
   margin: auto;
 }
@@ -524,6 +524,10 @@ section {
 .form__content--1 .row i {
   font-size: 25px;
   color: var(--main-color);
+}
+.form__content--1 .icons .row .icon:hover{
+  font-size: 30px;
+  
 }
 .form__content--1 .info .head {
   font-weight: 600;
@@ -691,10 +695,10 @@ footer .rrss a [title] {
 /* scroll */
 .scroll-top-btn {
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   bottom: 1vh;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   right: 2vw;
   background-color: var(--main-color);
   border-radius: 50%;
