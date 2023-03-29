@@ -400,7 +400,7 @@ padding-bottom: 50px;
   outline: var(--var-BLUE);
   background-color: var(--var-BLUE); 
   font-size: 1rem;
-  width: 230px;; 
+  width: 255px;; 
   border-radius: 30px;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer; 
