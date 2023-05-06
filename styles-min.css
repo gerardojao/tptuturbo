@@ -330,12 +330,16 @@ section {
   text-align: center;
   border-radius: 6px;
   padding: 20px 10px;
-  min-height: 500px;
+  min-height: 380px;
  margin-bottom: 5px;
  
 }
 .service__content--card:hover {
   background: var(--main-color);
+}
+.service__content--card .box .text .listValue li{
+  text-decoration: none;
+  list-style: none;
 }
 .service__content--card i {
   color: var(--main-color);
@@ -367,6 +371,11 @@ section {
   transform: scale(1.05);
  
 } 
+.list_value{
+  text-decoration: none;
+  list-style: none;
+}
+
  /* portfolio/portfolio */
 .portfolio {
   font-family: "Poppins", sans-serif;
@@ -474,6 +483,89 @@ color: var(--var-BLUE);
   font-size: 30px;
   cursor: pointer;
 }
+
+/* como comprar  */
+.buy {
+  display: flex;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 40, 0.5)) ,url(./assets/turbo.jpg);
+  /* background: url(./background-home.jpg); */
+  background-position: center;
+  background-size: cover;
+}
+.buy__container {
+  margin: auto;
+  max-width: 1300px;  
+  display: flex;
+  justify-content:end;
+  align-items:center;
+  flex-direction: column;
+}
+.buy__content{
+  width: 85%;  
+  margin:auto;
+}
+
+.buy__title {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.buy__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: var( --var-ORANGE);
+  transform: translateX(-50%);
+}
+.buy__title::after {
+ 
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  color: var(--main-color);
+  background: #fff;
+  transform: translateX(-50%);
+  padding: 5px;
+  font-size: 20px;
+}
+.marco{
+  border-radius:50%;
+  border:3px solid #1a2b52;
+  overflow:hidden;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin:auto;
+}
+.marco img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  height: 16rem;
+ 
+}
+.title__logo{
+  width: 100%;
+  height: auto;
+}
+
  /* contact me section */
  .contact {
   font-family: "Poppins", sans-serif;
@@ -829,9 +921,18 @@ footer .rrss a [title] {
     justify-content: center;
     align-items: center;
   }
-  .home{
-    color:#ed6b3d;
+  
+  .buy {
+    height: 130vh;
+    padding: 0;
   }
+ }
+  
+  
+  .form__content--1 .visible{
+    visibility: hidden;
+  }
+ 
   .about__content--1 img {
     height: 350px;
     width: 250px;
