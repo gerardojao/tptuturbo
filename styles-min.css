@@ -922,13 +922,11 @@ footer .rrss a [title] {
     align-items: center;
   }
   
-  .buy {
+  .buy {  
     height: 130vh;
     padding: 0;
   }
- }
-  
-  
+
   .form__content--1 .visible{
     visibility: hidden;
   }
