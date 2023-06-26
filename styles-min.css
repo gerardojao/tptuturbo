@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+ 
 }
 body {
   font-size: 16px;
@@ -501,9 +502,9 @@ color: var(--var-BLUE);
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
   background: linear-gradient(rgba(114, 111, 111, 0.5), rgba(41, 40, 40, 0.5)) ,url(./assets/turbo.jpg);
-  /* background: url(./background-home.jpg); */
   background-position: center;
   background-size: cover;
+  padding:20px 0;
 }
 .buy__container {
   margin: auto;
@@ -512,10 +513,12 @@ color: var(--var-BLUE);
   justify-content:end;
   align-items:center;
   flex-direction: column;
+ 
 }
 .buy__content{
   width: 85%;  
   margin:auto;
+  
 }
 
 .buy__title {
@@ -864,7 +867,7 @@ footer .rrss a [title] {
     padding: 0 10px;
   }
   .navbar__link--a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 450;
     margin-left: 10px;
     transition: color 0.3s ease;
@@ -904,7 +907,8 @@ footer .rrss a [title] {
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
-  }
+   
+   }
   .menu--active {
     padding-top:150px;
     right: 0;
