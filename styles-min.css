@@ -253,7 +253,7 @@ html {
   z-index:999;
   transition: .6s linear;
   border-radius: 50%;
-   
+  border: 2px solid white;
 }
 
 .share-button:hover span{
