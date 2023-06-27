@@ -804,33 +804,9 @@ color: var(--var-BLUE);
   outline-offset: 40px;
   border:1px solid var(--var-BLUE); 
   text-shadow: 1px 1px 6px #fff;
-} /* footer section */
-/* footer {
-  background: #111;
-  padding: 20px 23px;
-  color: #fff;
-  text-align: center;
 }
-footer .name {
-  color: var(--main-color);
-  font-size: 20px;
-}
-footer .rsss {
-  margin-bottom: 10px;
-}
-footer .copyright {
-  margin-top: 10px;
-}
-footer .rrss a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  padding: 20px;
-}
-footer .rrss a [title] {
-  color: #fff;
-  background: none;
-} */
+ /* footer section */
+
 .footer {
   position: relative;
   width: 100%;
