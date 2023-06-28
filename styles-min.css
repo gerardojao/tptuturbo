@@ -147,7 +147,7 @@ html {
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)) ,url(./background-home.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)) ,url(./assets/turbobckg.jpg);
   /* background: url(./background-home.jpg); */
   background-position: center;
   background-size: cover;
@@ -375,6 +375,9 @@ section {
 .list_value{
   text-decoration: none;
   list-style: none;
+}
+.list_value:hover{
+  color:white;
 }
 
  /* portfolio/portfolio */
