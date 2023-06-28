@@ -338,7 +338,7 @@ section {
 .service__content--card:hover {
   background: var(--main-color);
 }
-.service__content--card .box .text .listValue li{
+.service__content--card .box .text .list_Value li{
   text-decoration: none;
   list-style: none;
 }
@@ -348,8 +348,12 @@ section {
   padding-bottom: 10px;
   transition: color 0.3s ease;
 }
-.service__content--card:hover i, .service__content--card:hover p, .service__content--card:hover .text {
+.service__content--card:hover i, 
+.service__content--card:hover p, 
+ 
+.service__content--card:hover li {
   color: #f1f1f1;
+
 }
 
 .service__content--card .text {
@@ -376,9 +380,7 @@ section {
   text-decoration: none;
   list-style: none;
 }
-.list_value:hover{
-  color:white;
-}
+
 
  /* portfolio/portfolio */
 .portfolio {
